@@ -8,7 +8,7 @@ const router = require('./routes'); // Import main router
 
 /* Initialize express application */
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 /* Activate body parser for JSON requests */
 app.use(express.json());
